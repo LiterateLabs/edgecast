@@ -10,6 +10,8 @@ except ImportError:
 packages = [
     'edgecast',
     'django_edgecast',
+    'django_edgecast.management',
+    'django_edgecast.management.commands',
 ]
 
 requires = [
@@ -39,7 +41,7 @@ setup(
     tests_require=tests_require,
     install_requires=requires,
     license=open('LICENSE').read(),
-    zip_safe=True,
+    zip_safe=False,
     classifiers=(
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
